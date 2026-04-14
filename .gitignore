@@ -5,6 +5,8 @@ bootstrap.json
 bootstrap.jsonp
 build/
 classic.json
+node_modules
+.claude
 classic.jsonp
 ext/
 modern.json
@@ -12,3 +14,4 @@ modern.jsonp
 resources/sass/.sass-cache/
 resources/.arch-internal-preview.css
 .arch-internal-preview.css
+/.vscodeignore

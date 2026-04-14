@@ -1,0 +1,43 @@
+{
+  "name": "rcgig",
+  "displayName": "rcgig",
+  "description": "Right-click a file in the Explorer to add it to .gitignore",
+  "version": "0.0.1",
+  "publisher": "ObtuseAglet",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "activationEvents": [
+    "onCommand:rcgig.addToGitignore"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "rcgig.addToGitignore",
+        "title": "Add to .gitignore"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "rcgig.addToGitignore",
+          "when": "!explorerResourceIsFolder",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "@types/vscode": "^1.110.0",
+    "@vscode/vsce": "^3.7.1",
+    "typescript": "^5.9.3",
+    "vitest": "^1.6.1"
+  }
+}
