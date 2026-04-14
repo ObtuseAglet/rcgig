@@ -38,6 +38,6 @@
     "@types/vscode": "^1.110.0",
     "@vscode/vsce": "^3.7.1",
     "typescript": "^5.9.3",
-    "vitest": "^1.6.1"
+    "vitest": "^4.1.4"
   }
 }
